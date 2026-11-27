@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-27T00:41:25",
+  "client_id": "altyn",
+  "meeting_type": "presentation",
+  "service": "ff",
+  "context": "d",
+  "transcript": [
+    {
+      "speaker": "Client",
+      "message": "Bonjour, merci d'être ici pour nous présenter votre solution. \n\nPour entrer directement dans le vif du sujet, comment votre proposition s'intègre-t-elle concrètement avec nos exigences de performance énergétique et numérique sur nos projets actuels ?"
+    }
+  ],
+  "evaluation": {
+    "score": 0,
+    "note_sur_10": 0,
+    "resume": "Aucune réponse du manager : pas d'évaluation possible.",
+    "points_positifs": [],
+    "points_a_ameliorer": [
+      "Répondre aux questions du client."
+    ],
+    "justification": "Le manager n'a rien répondu pendant la simulation.",
+    "criteres": {
+      "clarte": 0,
+      "pertinence": 0,
+      "objections": 0,
+      "posture": 0,
+      "gestion_stress": 0
+    }
+  }
+}

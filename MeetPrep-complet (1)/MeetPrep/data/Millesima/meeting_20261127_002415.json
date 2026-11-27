@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-27T00:24:15",
+  "client_id": "millesimal",
+  "meeting_type": "decouverte",
+  "service": "",
+  "context": "",
+  "transcript": [
+    {
+      "speaker": "Client",
+      "message": "Bonjour et merci de m'accorder cet échange. Pour commencer, j'aimerais savoir en quoi votre approche se distingue concrètement des solutions que nous avons déjà pu étudier sur le marché pour nos projets digitaux."
+    },
+    {
+      "speaker": "Manager",
+      "message": "désolé ma fille de me donner quelques secondes et je reviens"
+    },
+    {
+      "speaker": "Client",
+      "message": "Pas de problème, prenez tout le temps qu'il vous faut, nous ne sommes pas pressés. Je serai là dès votre retour."
+    }
+  ],
+  "evaluation": {
+    "score": 0,
+    "note_sur_10": 0.0,
+    "resume": "Le manager a interrompu la réunion dès la première intervention du client pour s'occuper de sa fille, sans formuler de réponse sur le fond.",
+    "points_positifs": [],
+    "points_a_ameliorer": [
+      "Éviter les interruptions personnelles en début de rendez-vous",
+      "Répondre à la question initiale du client sur la différenciation de l'approche",
+      "Maintenir un niveau de professionnalisme et de disponibilité"
+    ],
+    "justification": "La réponse du manager fait moins de 5 mots et est totalement hors sujet par rapport à la question posée par le client. Conformément au barème, le score est compris entre 0 et 30.",
+    "criteres": {
+      "clarte": 0,
+      "pertinence": 0,
+      "objections": 0,
+      "posture": 0,
+      "gestion_stress": 0
+    }
+  }
+}

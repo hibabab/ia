@@ -1,0 +1,27 @@
+# MeetPrep – API Python
+
+Simulation de réunions clients : un **agent IA** joue le client, l'IA évalue le manager,
+et chaque réunion alimente une **mémoire RAG** réutilisée aux réunions suivantes.
+
+## Architecture
+| Fichier | Rôle |
+|---|---|
+| `server.py` | API FastAPI : `/chat`, `/evaluate`, `/history/{id}`, `/voice` |
+| `meetprep_core.py` | prompts, évaluation, extraction de mémoire |
+| `agent.py` | agent LangGraph (boucle agent ⇄ outils) |
+| `rag.py` | ChromaDB + embeddings Gemini (indexation et recherche par client) |
+| `history_store.py` | historique JSON par entreprise (`data/`) |
+| `voice_analysis.py` | analyse vocale (Wav2Vec2 + librosa) |
+| `scraper.py` | scraping d'un site entreprise → fiche JSON |
+
+## Flux
+1. `/chat` → l'agent consulte sa mémoire (outils `last_meetings`, `search_memory`) puis pose sa question.
+2. `/evaluate` → note du manager → sauvegarde JSON → (tâche de fond) résumé/engagements/objections → RAG.
+
+## Lancer
+```
+pip install -r requirements.txt
+
+uvicorn server:app --reload --port 8000
+python rag.py             # (optionnel) ré-indexer l'historique existant
+```

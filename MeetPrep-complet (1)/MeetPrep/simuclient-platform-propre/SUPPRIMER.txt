@@ -1,0 +1,19 @@
+Fichiers/dossiers à SUPPRIMER dans ton dossier simuclient-platform (inutiles ou non reliés au backend) :
+
+app/admin/            données fictives (managersData...), aucun lien avec le serveur Python
+app/debug/            données fictives (simulationTimeline, agentStats)
+app/clients/          liste statique de clients, doublon de client-info
+lib/ai-agents.ts  lib/analytics.ts  lib/auth.ts  lib/clients.ts
+lib/db.ts  lib/simulations.ts  lib/test-db.ts      jamais importés (MongoDB inutilisé)
+scripts/              fichiers SQL inutilisés
+rag_store.py          fichier Python dans le front : le RAG est dans le backend (rag.py)
+middleware.ts         ne faisait rien
+styles/               doublon de app/globals.css
+hooks/                doublon de components/ui/use-toast / use-mobile (supprimés aussi)
+components/theme-provider.tsx
+components/ui/        tout sauf : badge, button, card, input, progress, separator, slider, textarea
+pnpm-lock.yaml        vide ; garde package-lock.json
+public/placeholder*   inutilisés (GARDE public/avatars/)
+.next/  et  node_modules/   à ne pas copier ni envoyer (111 Mo)
+
+.env : supprime MONGODB_URI et JWT_SECRET (plus utilisés). Garde PYTHON_API_URL.
